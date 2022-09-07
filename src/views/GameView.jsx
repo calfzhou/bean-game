@@ -214,7 +214,7 @@ class GameView extends React.Component {
         {this.state.gameStatus !== GameStatus.Start &&
           Array(Math.min(this.state.round + 1, this.roundCount)).fill().map((_, r) => {
             return (
-              <>
+              <div key={r}>
                 <Divider>
                   第{(r + 1).toLocaleString('zh-Hans-CN-u-nu-hanidec')}轮
                   {this.state.round > r &&
@@ -235,7 +235,7 @@ class GameView extends React.Component {
                     )
                   })}
                 </Grid>
-              </>
+              </div>
             )
           })
         }
@@ -245,7 +245,7 @@ class GameView extends React.Component {
             <Divider>结果：{winner < 0 ? '平局' : `（玩家 ${winner + 1}）${this.state.players[winner]} 胜利！`}</Divider>
             {this.state.roundRecords.map((records, r) => {
               return (
-                <AutoCenter>
+                <AutoCenter key={r}>
                   【第{(r + 1).toLocaleString('zh-Hans-CN-u-nu-hanidec')}轮：
                   {records[0] === records[1] ? '平' : (records[0] > records[1] ? `${this.state.players[0]}胜` : `${this.state.players[1]}胜`)}
                   】
