@@ -177,7 +177,7 @@ class GameView extends React.Component {
                   <Grid.Item>
                     <Button
                       block
-                      color='success'
+                      color='warning'
                       onClick={async () => {
                         let confirm = this.state.gameStatus === GameStatus.Finished
                         confirm ||= await Dialog.confirm({content: '您确定要终止当前游戏吗？'})
@@ -234,9 +234,6 @@ class GameView extends React.Component {
                       </Grid.Item>
                     )
                   })}
-                  {this.state.round > r &&
-                    <AutoCenter>本轮最少的豆子个数为 {Math.min(...this.state.roundRecords[r])} 个。</AutoCenter>
-                  }
                 </Grid>
               </>
             )
