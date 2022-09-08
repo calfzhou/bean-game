@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bean-game/static/css/main.9019691a.css",
-    "main.js": "/bean-game/static/js/main.419d861c.js",
+    "main.js": "/bean-game/static/js/main.b36dbd71.js",
     "static/js/787.b6b659c5.chunk.js": "/bean-game/static/js/787.b6b659c5.chunk.js",
     "index.html": "/bean-game/index.html",
     "main.9019691a.css.map": "/bean-game/static/css/main.9019691a.css.map",
-    "main.419d861c.js.map": "/bean-game/static/js/main.419d861c.js.map",
+    "main.b36dbd71.js.map": "/bean-game/static/js/main.b36dbd71.js.map",
     "787.b6b659c5.chunk.js.map": "/bean-game/static/js/787.b6b659c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9019691a.css",
-    "static/js/main.419d861c.js"
+    "static/js/main.b36dbd71.js"
   ]
 }
